@@ -21,6 +21,21 @@ int main(){
 		cout<<endl<<"Nombres: "; cin>>p.nombres[i];
 		cout<<"DNI: "; cin>>p.DNI[i];
 		cout<<"Edad: "; cin>>p.edad[i];
+		if(p.edad[i]>50){
+			e++;
+		}
+		s=s+p.edad[i];
+	}
+	
+	cout<<endl<<"Las personas mayores de 50 anios son "<<e;
+	EP=s/n;
+	cout<<endl<<"La edad promedio es "<<EP;
+	
+	for(int j=0; j<n; j++){
+		cout<<endl<<endl<<"Persona "<<j+1;
+		cout<<endl<<"Nombres: "<<p.nombres[j];
+		cout<<endl<<"DNI: "<<p.DNI[j];
+		cout<<endl<<"Edad: "<<p.edad[j];
 	}
 	system("pause");
 	return 0;
